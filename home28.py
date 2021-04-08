@@ -34,5 +34,5 @@ to convert degree to radian.'''
 all primes smaller than or equal to a
 specified number.'''
 
-from test28 import specified
-print(specified(9))
+# from test28 import specified
+# print(specified(9))
