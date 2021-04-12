@@ -44,45 +44,25 @@ class Myclass:
 		self.a = a
 
 
-	def team1(self):
+	def team(self):
 		res1 = []
-		count1 = 0
+		res2 = []
+		res = []
+		
 		for i in range(len(self.a)):
 			if i % 2 == 0:
 				res1.append(self.a[i])
+			if i % 2 == 1:
+				res2.append(self.a[i])
 			
-		print(res1)
+		res.append(sum(res1))
+		res.append(sum(res2))
+		return res
 
-	def team2(self):
-		res2 = []
-		for j in range(len(self.a)):
-			if j % 2 == 1:
-				res2.append(self.a[j])
-		print(res2)
-
-
-class Result(Myclass):
-
-	def __init__(self,a, res1, res2):
-		super().__init__(res1, res2)
-		self.res1 = res1
-		self.res2 = res2
-
-
-	def res(self):
-		print(self.res1, self.res2)
-
-x = Result(Myclass([50, 60, 60, 45, 70]))
-x.team1()
-x.team2()
-x.res()
+	
+x = Myclass([50, 60, 60, 45, 70])
+print(x.team())
 
 
 
 
-
-# a = [50, 60, 60, 45, 70]
-# count = 0
-# res = sorted([i for i in self.a if i != -1])
-# for i in a:
-# 	print(a[i])
