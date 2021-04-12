@@ -110,3 +110,13 @@ which will compute the area of a rectangle'''
 # F = France()
 # A.country()
 # F.country()
+
+
+
+
+class Student(Person):
+	def __init__(self, fname, lname, age):
+		super().__init__(fname, lname)
+		self.age = age
+	def welcome(self):
+		print(self.firstname, self.lastname, self.age) 
