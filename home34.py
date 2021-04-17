@@ -38,30 +38,30 @@ weight of team 2 after the division is complete.'''
 
 # a = [50, 60, 60, 45, 70]
 
-class Myclass:
+# class Myclass:
 
-	def __init__(self,a):
-		self.a = a
+# 	def __init__(self,a):
+# 		self.a = a
 
 
-	def team(self):
-		res1 = []
-		res2 = []
-		res = []
+# 	def team(self):
+# 		res1 = []
+# 		res2 = []
+# 		res = []
 		
-		for i in range(len(self.a)):
-			if i % 2 == 0:
-				res1.append(self.a[i])
-			if i % 2 == 1:
-				res2.append(self.a[i])
+# 		for i in range(len(self.a)):
+# 			if i % 2 == 0:
+# 				res1.append(self.a[i])
+# 			if i % 2 == 1:
+# 				res2.append(self.a[i])
 			
-		res.append(sum(res1))
-		res.append(sum(res2))
-		return res
+# 		res.append(sum(res1))
+# 		res.append(sum(res2))
+# 		return res
 
 	
-x = Myclass([50, 60, 60, 45, 70])
-print(x.team())
+# x = Myclass([50, 60, 60, 45, 70])
+# print(x.team())
 
 
 
